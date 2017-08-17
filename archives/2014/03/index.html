@@ -28,8 +28,31 @@
     }
   </style>
   
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-40317134-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
 
   
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?4a83baf35c05d96086f97684fa79ddd0";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 
 </head>
 
@@ -69,6 +92,8 @@
     			
             
     			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">true</a>
+    			
             
     			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
@@ -78,7 +103,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="jianshu" target="_blank" href="http://www.jianshu.com/u/GX2m43" title="jianshu"><i class="icon-jianshu"></i></a>
+					<a class="weixin" target="_blank" href="http://weibo.com/loafer117" title="weixin"><i class="icon-weixin"></i></a>
 		        
 					<a class="douban" target="_blank" href="https://www.douban.com/people/loafer117/" title="douban"><i class="icon-douban"></i></a>
 		        
@@ -121,7 +146,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="jianshu" target="_blank" href="http://www.jianshu.com/u/GX2m43" title="jianshu"><i class="icon-jianshu"></i></a>
+						<a class="weixin" target="_blank" href="http://weibo.com/loafer117" title="weixin"><i class="icon-weixin"></i></a>
 			        
 						<a class="douban" target="_blank" href="https://www.douban.com/people/loafer117/" title="douban"><i class="icon-douban"></i></a>
 			        
@@ -335,6 +360,8 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
+      
+      
     
       
       
@@ -346,13 +373,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">true</a></li>
+      
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -377,11 +406,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工作</a>
+                <a href="javascript:void(0)" class="js-tag color3">译文</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">译文</a>
+                <a href="javascript:void(0)" class="js-tag color3">工作</a>
               </li>
             
             <div class="clearfix"></div>
@@ -428,11 +457,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://dreamranger.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>夢騎士</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://dunai.tv/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>毒奶直播</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">小米运动PM&lt;br&gt;&lt;br&gt;摇滚爱好者&lt;br&gt;Judas Preist/Dream Theater死忠粉&lt;br&gt;&lt;br&gt;耐力运动爱好者&lt;br&gt;铁人三项国家一级运动员&lt;br&gt;马拉松国家二级运动员</div>
   	  	
     	</section>
     
